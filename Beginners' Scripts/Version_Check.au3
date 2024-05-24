@@ -1,18 +1,22 @@
-;ConsoleWrite(@AutoItVersion & @CRLF)
-;ConsoleWrite(@OSVersion & Chr(13))
-;ConsoleWrite(@UserName & Chr(13))
+;Built-in macros in AutoIT
 
-;ConsoleWrite(@ComputerName)
+ConsoleWrite(@AutoItVersion & @CRLF)
 
-;ConsoleWrite(@IPAddress1 & @CRLF)
+ConsoleWrite(@OSVersion & Chr(13))
 
-;ConsoleWrite(@HomeDrive & @CRLF)
+ConsoleWrite(@UserName & Chr(13))
 
-;ConsoleWrite(@UserProfileDir)
+ConsoleWrite(@ComputerName)
 
-;ConsoleWrite(@ScriptName)
+ConsoleWrite(@IPAddress1 & @CRLF)
 
-;ConsoleWrite( @CRLF & @ScriptLineNumber)
+ConsoleWrite(@HomeDrive & @CRLF)
+
+ConsoleWrite(@UserProfileDir)
+
+ConsoleWrite(@ScriptName)
+
+ConsoleWrite( @CRLF & @ScriptLineNumber)
 
 #include<MsgBoxConstants.au3>
 MsgBox($MB_OK + @SW_MAXIMIZE, "Testing", "It is going on")
