@@ -1,15 +1,12 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.16.1
- Author:         myName
+ Author:         Shashwat Malasi
 
  Script Function:
 	Template AutoIt script.
 
 #ce ----------------------------------------------------------------------------
-
-; Script Start - Add your code below here
-
 
 #include<MsgBoxConstants.au3>
 #include<Excel.au3>
@@ -23,7 +20,7 @@ If @error Then
 EndIf
 $oExcel.Visible = True
 
-;---------Ceating a workbook and a Worksheet------------------------------
+;---------Creating a Workbook and a Worksheet------------------------------
 
 Local $oWorkbook = _Excel_Booknew($oExcel)
 If @error Then
@@ -48,9 +45,7 @@ Else
 	WinSetState($hwnd,"",@SW_MAXIMIZE);
 EndIf
 
-;Local $oWorksheet = _Excel_BookNewSheet($oWorkbook)
-
-Sleep(2000)
+Sleep(2000) ;Wait for 2 seconds to get the Excel loaded
 
 ;----------Writing data into the Excel worksheet-----------------------------
 
@@ -67,7 +62,7 @@ $oWorksheet.Cells(2,2).Value = "Anuj Dhar"
 
 
 
-
+;The approach below may sometimes not perform well
 ;_Excel_RangeWrite($oWorkSheet, "A1", "Book Name")
 ;_Excel_RangeWrite($oWorkSheet, "B1", "Author")
 ;_Excel_RangeWrite($oWorkSheet, "A2", "Conundrum")
