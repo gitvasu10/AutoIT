@@ -1,7 +1,7 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.16.1
- Author:         Shashwat Malsi
+ Author:         myName
 
  Script Function:
 	Template AutoIt script.
