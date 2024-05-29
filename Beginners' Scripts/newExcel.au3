@@ -1,14 +1,9 @@
 #cs ----------------------------------------------------------------------------
 
  AutoIt Version: 3.3.16.1
- Author:         myName
+ Author:         Shashwat Malasi
 
- Script Function:
-	Template AutoIt script.
-
-#ce ----------------------------------------------------------------------------
-
-; Script Start - Add your code below here
+;Creating an Excel sheet in the current folder using AutoIT
 
 ; Create an Excel COM object
 Local $oExcel = ObjCreate("Excel.Application")
