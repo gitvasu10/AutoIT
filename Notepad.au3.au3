@@ -11,12 +11,20 @@
 ; Script Start - Add your code below here
 
 Run("notepad.exe")
-WinWaitActive("Untitled - Notepad")
 
+$testWindow = WinWaitActive("Untitled - Notepad", "", 5)
+Sleep(1000)
+WinSetState("Untitled - Notepad", "", @SW_MAXIMIZE)
+Sleep(1000)
 Send("This is the Notepad Automation script")
 
-WinClose("Untitled - Notepad")
+MouseClick("right", 25, 45)
+Sleep(5000)
 
-;WinWaitActive("Notepad","Save")
+;WinClose("*This is the Notepad Automation script - Notepad")
+WinClose($testWindow)
+
+WinWaitActive("*This is the Notepad Automation scri", "Save")
+;Sleep("{TAB} {ENTER}")
 
 ;Send("!n")
