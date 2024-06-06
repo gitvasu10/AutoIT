@@ -12,15 +12,15 @@
 
 Run("notepad.exe")
 WinWaitActive("Untitled - Notepad")
-Sleep(1000)
+Sleep(5000)
 
 Send("This one is the final!")
 
-Sleep(1000)
+Sleep(6000)
 
 WinClose("*This one is the final - Notepad")
 
 WinWaitActive("*This is the final!", "Save")
 
-WinWaitActive("Save As","Save")
+WinWaitActive("[CLASS:#32770]","Save")
 
